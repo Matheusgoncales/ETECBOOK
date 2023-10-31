@@ -17,4 +17,6 @@ FrontEnd
  dotnet ef migrations add <nome da migração>
  dotnet ef migrations add criar-banco
 
- dotnet ef database update
+
+- Acessar a pasta EtecBook.Server\EtecBookAPI  
+dotnet ef database update
