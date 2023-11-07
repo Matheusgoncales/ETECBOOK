@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import ValidateForm from 'src/app/helpers/validateForm';
 
 @Component({
   selector: 'app-register',
@@ -28,7 +29,7 @@ export class RegisterComponent {
       console.log(this.registerForm.value);
     } else {
       // Exibir Erro
-
+      ValidateForm.validateAllFormsFields(this.registerForm);
     }
   }
 
